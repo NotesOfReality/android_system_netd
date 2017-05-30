@@ -185,7 +185,7 @@ LOCAL_SRC_FILES := \
         ../tests/tun_interface.cpp \
 
 LOCAL_MODULE_TAGS := tests
-LOCAL_STATIC_LIBRARIES := libgmock
+LOCAL_STATIC_LIBRARIES := libgmock libpcap
 LOCAL_SHARED_LIBRARIES := \
         libnetdaidl \
         libbase \
@@ -196,7 +196,6 @@ LOCAL_SHARED_LIBRARIES := \
         libnetutils \
         libnetdutils \
         libnl \
-        libpcap \
         libsysutils \
         libutils \
 
