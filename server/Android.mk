@@ -164,6 +164,7 @@ LOCAL_C_INCLUDES := \
         system/core/logwrapper/include \
 
 LOCAL_SRC_FILES := \
+        InterfaceController.cpp InterfaceControllerTest.cpp \
         Controllers.cpp \
         NetdConstants.cpp IptablesBaseTest.cpp \
         IptablesRestoreController.cpp IptablesRestoreControllerTest.cpp \
@@ -186,6 +187,7 @@ LOCAL_SRC_FILES := \
 LOCAL_MODULE_TAGS := tests
 LOCAL_STATIC_LIBRARIES := libgmock
 LOCAL_SHARED_LIBRARIES := \
+        libnetdaidl \
         libbase \
         libbinder \
         libcutils \
